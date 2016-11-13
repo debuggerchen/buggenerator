@@ -52,6 +52,13 @@ chainNode* binSort(chainNode *first) {
 			}
 			end = top[j];
 		}
+		cout << "过程" << i << endl;
+		chainNode* temp = first;
+		while (temp) {
+			cout << temp->data << " ";
+			temp = temp->next;
+		}
+		cout << endl;
 		for (int k = 0; k < 10; k++) {
 			bottom[k] = NULL;
 			top[k] = NULL;
@@ -83,8 +90,9 @@ int main()
 
 	chainNode *r=binSort(first);
 	//chainNode *p = r;
+	cout << "结果:" << endl;
 	while (r) {
-		cout << r->data<<endl;
+		cout << r->data<<" ";
 		r = r->next;
 
 	}

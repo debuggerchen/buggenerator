@@ -1,4 +1,5 @@
 #pragma once
+#include "ChainNode.h"
 class sort
 {
 public:
@@ -12,6 +13,7 @@ public:
 	static void quicksort(int list[], int a, int b,int length);
 	static void Merge(int list[], int a, int b, int c);
 	static void MergeSort(int list[], int a, int b,int length);
-
+	static int maxLength(ChainNode *list);
+	static ChainNode* binSort(ChainNode *first);
 };
 
