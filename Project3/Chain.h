@@ -14,7 +14,7 @@ private:
 
 class Chain
 {
-	friend ChainIterator;
+	friend class ChainIterator;
 public:
 	Chain();
 	Chain(Node *node);
