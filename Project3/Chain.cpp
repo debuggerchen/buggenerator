@@ -40,14 +40,9 @@ Chain::~Chain()
 void Chain::Insert(int a)
 {
 	Node *p = new Node();	//创建新节点
-	p->data = a;	//为新节点赋值
-	if (first) {		
-		p->link = first;	//原链表不为空，将新节点插入表头
-		first = p;
-	}
-	else {
-		first = p;	//原链表为空，直接赋值
-	}
+	p->data = a;	//为新节点赋值	
+	p->link = first;	//将新节点插入表头
+	first = p;	//设置表头
 }
 /*
 	删除
