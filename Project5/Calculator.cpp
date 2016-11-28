@@ -53,32 +53,6 @@ string Calculator::Postfix()
 				}
 				list.push(node);	//入栈
 			}
-			/*if (list.Get() == NULL || 
-				(exp[i]!=')'&&Priority(exp[i]) > Priority(list.Get()->op)))
-			{
-				list.push(node);
-			}
-			else if(exp[i]!=')'){
-				while (list.Get() &&list.Get()->op != '(' 
-					&&Priority(exp[i]) <= Priority(list.Get()->op)) {
-					Node * temp = list.pop();
-					postfix += temp->op;
-					delete temp;
-				}
-				list.push(node);
-			}
-			else {
-				while (exp[i] == ')') {
-					Node * temp = list.pop();
-					if (temp != NULL &&temp->op != '(')
-						postfix += temp->op;
-					else {
-						delete temp;
-						break;
-					}
-					delete temp;
-				}
-			}*/
 		}
 	}
 	while (list.Get()) {	//将栈中剩余运算符取出
