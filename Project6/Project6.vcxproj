@@ -19,9 +19,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{3C63292E-1446-4D1F-A315-CC56B8AEDB69}</ProjectGuid>
+    <ProjectGuid>{4E137581-F71F-4665-8C0B-E56520B99CD7}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>Project3</RootNamespace>
+    <RootNamespace>Project6</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -149,15 +149,13 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Chain.h" />
-    <ClInclude Include="Node.h" />
+    <ClInclude Include="BinTree.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Chain.cpp" />
-    <ClCompile Include="Node.cpp" />
-    <ClCompile Include="Project3.cpp" />
+    <ClCompile Include="BinTree.cpp" />
+    <ClCompile Include="Project6.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
